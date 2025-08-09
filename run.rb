@@ -18,9 +18,9 @@ action =
     :discord_links
   else
     puts "bro didn't call me with an argument 💀"
-    puts "     ruby get_all.rb s  -  scrape all stories"
-    puts "     ruby get_all.rb u  -  after scraping stories, scrape all author and reviewer users"
-    puts "     ruby get_all.rb o  -  scrape the old story archive"
+    puts "     ruby run.rb s  -  scrape all stories"
+    puts "     ruby run.rb u  -  after scraping stories, scrape all author and reviewer users"
+    puts "     ruby run.rb o  -  scrape the old story archive"
     puts "bro neads to READ the README"
     exit
   end
