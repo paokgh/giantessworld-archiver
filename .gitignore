@@ -1,0 +1,6 @@
+*.html
+*.htm
+*.txt
+*.css
+*.zip
+!scrape/stylesheet/style.css

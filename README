@@ -1,0 +1,47 @@
+# GiantessWorld Archiver
+
+shitty script that downloads GiantessWorld stories for archival purposes.
+
+### Features
+
+- downloads each story to a separate folder of html files
+- the story links in the files actually work. Or some of them, anyway
+- saves space by discarding unnecessary html like the sidebar and header
+- downloads a ton really fast because the site doesn't do any rate limiting???
+
+### How to use
+
+1. have ruby 3.4 or higher
+2. `bundle install`
+3. run `run.rb` with an option
+
+### Options
+
+### `ruby run.rb s`
+
+downloads all stories to `./scrape/stories`
+
+- downloads all story IDs up to 17000, including reviews
+- skips deleted or nonexistent stories
+- oh no, oh my gosh, are there more than 1700 story IDs now???? Sorry, it's hard-coded, change the code yourself you big dummy
+
+### `ruby run.rb u`
+
+downloads author bios and story reviews to `./scrape/users`
+
+- must be run AFTER you run `ruby run.rb s`
+- only downloads bios for users who either (a) left a review, or (b) wrote a story. It uses the data you downloaded in `ruby run.rb s` to determine who those are. In other words, it does *not* scrape the site to find its list of users to scrape.
+
+### `ruby run.rb o`
+
+downloads the old story archive to `./scrape/old_stories`
+
+- many of the links there are broken, and this script attempts to fix the links and download the stories. It is able to find *most* of them. Some I just couldn't figure out.
+
+### Etc
+
+made with 😡 by paok230@discord
+
+I will not be offering any kind of support or maintenance for this code - unless you ask *really* nicely, or if you are a cute girl. Then I will happily bend over backwards and discard all of my dignity for you. I will even send you a sub-$10 item from Amazon. (Okay, no I won't. But I reserve the right to imagine doing so.)
+
+the archive I made when I originally wrote this script is available from a link in the GiantessWorld discord. Can you find it???
