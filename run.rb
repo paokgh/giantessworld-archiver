@@ -1,5 +1,5 @@
 require "nokogiri"
-require "debug"
+require "fileutils"
 require "net/http"
 
 action =
@@ -128,7 +128,6 @@ if action == :discord_links
   puts d.count
 
   d = d.flatten.map { |x| "https://" + x }.map(&:strip).uniq
-  debugger
   puts d.sort.join("\n")
 
   # note that some of these are broken because they contain the next line's text. EG "fsdfsdaYu" Gi Oh
