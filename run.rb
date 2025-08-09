@@ -331,8 +331,6 @@ if action == :users
   puts "Total users: #{user_ids.count}"
 
   user_ids.sort.each_with_index do |uid, i|
-    next if (i < 1430)
-
     user_page = fetch(get_user_url(uid))
     username =
       user_page.css("#biotitle").children.map(&:text)[1]
@@ -343,7 +341,7 @@ if action == :users
     if !username
       puts "THIS USER DOESN'T HAVE ANY INFORMATION?????? #{uid}"
       File.write(
-        base_path + "[DELETED] #{username} -  #{uid}",
+        base_path + "[DELETED] #{username} -  #{uid}.html",
         "No bio info..."
       )
       next
@@ -357,7 +355,7 @@ if action == :users
     body.children.map(&:remove)
     body.add_child(bio)
 
-    File.write(base_path + "#{username} - #{uid}", user_page)
+    File.write(base_path + "#{username} - #{uid}.html", user_page)
     puts "#{uid} - #{username} (#{i + 1}/#{user_ids.count})"
   rescue StandardError => e
     puts "issue with #{uid}"

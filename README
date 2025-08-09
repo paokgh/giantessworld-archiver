@@ -1,6 +1,6 @@
 # GiantessWorld Archiver
 
-shitty script that downloads GiantessWorld stories for archival purposes.
+quick and shitty script that downloads GiantessWorld stories for archival purposes.
 
 ### Features
 
@@ -23,7 +23,7 @@ downloads all stories to `./scrape/stories`
 
 - downloads all story IDs up to 17000, including reviews
 - skips deleted or nonexistent stories
-- oh no, oh my gosh, are there more than 1700 story IDs now???? Sorry, it's hard-coded, change the code yourself you big dummy
+- oh no, oh my gosh, are there more than 17000 story IDs now???? Sorry, it's hard-coded, change the code yourself you big dummy
 
 ### `ruby run.rb u`
 
