@@ -42,6 +42,6 @@ downloads the old story archive to `./scrape/old_stories`
 
 made with 😡 by paok230@discord
 
-I will not be offering any kind of support or maintenance for this code - unless you ask *really* nicely, or if you are a cute girl. Then I will happily bend over backwards and discard all of my dignity for you. I will even send you a sub-$10 item from Amazon. (Okay, no I won't. But I reserve the right to imagine doing so.)
+I will not be offering any kind of support or maintenance for this code - unless you ask *really* nicely - well... nah, I still won't, sorry!
 
 the archive I made when I originally wrote this script is available from a link in the GiantessWorld discord. Can you find it???
